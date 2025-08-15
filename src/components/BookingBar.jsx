@@ -19,7 +19,7 @@ export default function BookingBar() {
           <option>3 Rooms, 6 Guests</option>
         </select>
       </div>
-      <button className="check-btn">Check Availability > </button>
+      <button className="check-btn">Check Availability  </button>
     </section>
-  );
+);
 }

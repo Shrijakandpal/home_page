@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import BookingBar from './components/BookingBar.jsx';
+import BookingBar from './components/BookingBar';
 import Rooms from './components/Rooms';
 import Amenities from './components/Amenities';
 import Testimonials from './components/Testimonials';
