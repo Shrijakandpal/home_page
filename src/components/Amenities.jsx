@@ -13,13 +13,15 @@ export default function Amenities() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   ]);
 
+  const API_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
   const handleEdit = (index) => {
     setEditingIndex(index);
   };
 
   const handleSave = async (index) => {
     try {
-      const response = await fetch("http://localhost:5000/update-section", {
+      const response = await fetch(`${API_URL}/update-section`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
